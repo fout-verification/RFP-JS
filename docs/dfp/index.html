@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.35" />
+    <meta name="generator" content="Hugo 0.46" />
     <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="https://fout-verification.github.io/RFP-JavaScript-SDK//images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="https://fout-verification.github.io/RFP-JavaScript-SDK//images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://fout.github.io/RFP-JavaScript-SDK//images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="https://fout.github.io/RFP-JavaScript-SDK//images/favicon.png" type="image/x-icon" />
 
     <title>DFP連携 :: RFP-JavaScript-SDK Docs</title>
     
     
-    <link href="/RFP-JavaScript-SDK/css/nucleus.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/font-awesome.min.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/hybrid.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/featherlight.min.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/perfect-scrollbar.min.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/auto-complete.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/theme.css?1518763698" rel="stylesheet">
-    <link href="/RFP-JavaScript-SDK/css/hugo-theme.css?1518763698" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/nucleus.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/font-awesome.min.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/hybrid.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/featherlight.min.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/perfect-scrollbar.min.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/auto-complete.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/theme.css?1611724815" rel="stylesheet">
+    <link href="/RFP-JavaScript-SDK/css/hugo-theme.css?1611724815" rel="stylesheet">
     
-      <link href="/RFP-JavaScript-SDK/css/theme-red.css?1518763698" rel="stylesheet">
+      <link href="/RFP-JavaScript-SDK/css/theme-red.css?1611724815" rel="stylesheet">
     
 
-    <script src="/RFP-JavaScript-SDK/js/jquery-2.x.min.js?1518763698"></script>
+    <script src="/RFP-JavaScript-SDK/js/jquery-2.x.min.js?1611724815"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -42,7 +42,7 @@
 
   <div id="header-wrapper">
     <div id="header">
-      <a id="logo" href="https://fout-verification.github.io/RFP-JavaScript-SDK/ja">
+      <a id="logo" href="https://fout.github.io/RFP-JavaScript-SDK/ja">
     RFP-JavaScript-SDK Docs
 </a>
 
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/RFP-JavaScript-SDK/js/lunr.min.js?1518763698"></script>
-<script type="text/javascript" src="/RFP-JavaScript-SDK/js/auto-complete.js?1518763698"></script>
+<script type="text/javascript" src="/RFP-JavaScript-SDK/js/lunr.min.js?1611724815"></script>
+<script type="text/javascript" src="/RFP-JavaScript-SDK/js/auto-complete.js?1611724815"></script>
 <script type="text/javascript">
     
         var baseurl = "\/RFP-JavaScript-SDK\/";
     
 </script>
-<script type="text/javascript" src="/RFP-JavaScript-SDK/js/search.js?1518763698"></script>
+<script type="text/javascript" src="/RFP-JavaScript-SDK/js/search.js?1611724815"></script>
 
     
   </div>
@@ -200,6 +200,25 @@
       <li data-nav-id="/RFP-JavaScript-SDK/infeed-ads/1_6/" title="広告パラメータ" class="dd-item ">
         <a href="/RFP-JavaScript-SDK/infeed-ads/1_6/">
         <b>6. </b>広告パラメータ
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/RFP-JavaScript-SDK/infeed-ads/1_7/" title="AMP への対応" class="dd-item ">
+        <a href="/RFP-JavaScript-SDK/infeed-ads/1_7/">
+        <b>7. </b>AMP への対応
         
         </a>
     </li>
@@ -422,17 +441,13 @@
 &lt;!-- 広告ユニットのテンプレート --&gt;
 &lt;script type=&quot;text/rfp-infeed-template&quot; data-adspot-id=&quot;NzYzOjEyMg&quot;&gt;
 &lt;div class=&quot;article&quot;&gt;
-  &lt;div class=&quot;icon&quot;&gt;
+  &lt;div class=&quot;contents&quot;&gt;
     &lt;!-- [重要] dfp のクリックマクロを挿入し、直後に RFP のクリック URL をつけてください。 --&gt;
     &lt;a href=&quot;%%CLICK_URL_UNESC%%{{click_url}}&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;{{icon_image_url}}&quot; /&gt;
+      &lt;h3&gt;{{title}}&lt;/h3&gt;
+      &lt;p&gt;{{description}}&lt;/p&gt;
+      &lt;span class=&quot;source&quot;&gt;{{displayed_advertiser}}&lt;/span&gt;
     &lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;contents&quot;&gt;
-    &lt;h3&gt;{{title}}&lt;/h3&gt;
-    &lt;p&gt;{{description}}&lt;/p&gt;
-    &lt;span class=&quot;source&quot;&gt;{{displayed_advertiser}}&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/script&gt;
@@ -481,17 +496,13 @@ RFP.InFeed.Default.run({
 <pre><code class="language-html">&lt;!-- 広告ユニットのテンプレート --&gt;
 &lt;script type=&quot;text/rfp-infeed-template&quot; data-adspot-id=&quot;NzYzOjEyMg&quot;&gt;
 &lt;div class=&quot;article&quot;&gt;
-  &lt;div class=&quot;icon&quot;&gt;
+  &lt;div class=&quot;contents&quot;&gt;
     &lt;!-- [重要] dfp のクリックマクロを挿入し、直後に RFP のクリック URL をつけてください。 --&gt;
     &lt;a href=&quot;%%CLICK_URL_UNESC%%{{click_url}}&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;{{icon_image_url}}&quot; /&gt;
+      &lt;h3&gt;{{title}}&lt;/h3&gt;
+      &lt;p&gt;{{description}}&lt;/p&gt;
+      &lt;span class=&quot;source&quot;&gt;{{displayed_advertiser}}&lt;/span&gt;
     &lt;/a&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;contents&quot;&gt;
-    &lt;h3&gt;{{title}}&lt;/h3&gt;
-    &lt;p&gt;{{description}}&lt;/p&gt;
-    &lt;span class=&quot;source&quot;&gt;{{displayed_advertiser}}&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/script&gt;
@@ -677,6 +688,22 @@ ad_info.click_url = encodeURIComponent(ad_info.click_url);
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -723,7 +750,7 @@ ad_info.click_url = encodeURIComponent(ad_info.click_url);
 
 
         
-            <a class="nav nav-prev" href="/RFP-JavaScript-SDK/infeed-ads/1_6/" title="広告パラメータ"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/RFP-JavaScript-SDK/infeed-ads/1_7/" title="AMP への対応"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="/RFP-JavaScript-SDK/namespace/" title="名前空間" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -735,20 +762,20 @@ ad_info.click_url = encodeURIComponent(ad_info.click_url);
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/RFP-JavaScript-SDK/js/clipboard.min.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/perfect-scrollbar.min.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/perfect-scrollbar.jquery.min.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/jquery.sticky.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/featherlight.min.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/html5shiv-printshiv.min.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/highlight.pack.js?1518763698"></script>
+    <script src="/RFP-JavaScript-SDK/js/clipboard.min.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/perfect-scrollbar.min.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/perfect-scrollbar.jquery.min.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/jquery.sticky.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/featherlight.min.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/html5shiv-printshiv.min.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/highlight.pack.js?1611724815"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/RFP-JavaScript-SDK/js/modernizr.custom.71422.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/learn.js?1518763698"></script>
-    <script src="/RFP-JavaScript-SDK/js/hugo-learn.js?1518763698"></script>
+    <script src="/RFP-JavaScript-SDK/js/modernizr.custom.71422.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/learn.js?1611724815"></script>
+    <script src="/RFP-JavaScript-SDK/js/hugo-learn.js?1611724815"></script>
 
-    <link href="/RFP-JavaScript-SDK/mermaid/mermaid.css?1518763698" type="text/css" rel="stylesheet" />
-    <script src="/RFP-JavaScript-SDK/mermaid/mermaid.js?1518763698"></script>
+    <link href="/RFP-JavaScript-SDK/mermaid/mermaid.css?1611724815" type="text/css" rel="stylesheet" />
+    <script src="/RFP-JavaScript-SDK/mermaid/mermaid.js?1611724815"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
